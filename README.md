@@ -1,7 +1,7 @@
 # JavaRestApiTraining
 Java, Spring boot, docker, mysql, rest api
 
-
+# Descargar : https://dev.mysql.com/downloads/shell/
 
 //	docker run --detach 
 //	--env MYSQL_ROOT_PASSWORD=dummypassword 
