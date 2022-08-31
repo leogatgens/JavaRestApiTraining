@@ -3,6 +3,15 @@ Java, Spring boot, docker, mysql, rest api
 
 # Descargar : https://dev.mysql.com/downloads/shell/
 
+# Correr en H2 memory database
+1. Agregar el pom.xml
+   <dependency>
+   <groupId>com.h2database</groupId>
+   <artifactId>h2</artifactId>
+   <scope>runtime</scope>
+   </dependency>
+2. http://localhost:8080/h2-console/ para accesar la bd
+
 # Correr para levantar BD MySql
 //	docker run --detach 
 //	--env MYSQL_ROOT_PASSWORD=dummypassword 
@@ -22,5 +31,5 @@ Java, Spring boot, docker, mysql, rest api
 1. En el pom.xml esta dependencia permite recargar el server cuando salva un archivo.
 
 ## spring-boot-starter-data-jpa
-1. Para conectarse a una base de datos.
+1. JPA(hibernate) Para conectarse a una base de datos.
 
