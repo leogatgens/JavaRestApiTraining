@@ -31,8 +31,15 @@ Java, Spring boot, docker, mysql, rest api
 
 # Opcion 2 en BD: Correr para levantar BD MySql
 
-## Usando Docker
-docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=courses-user --env MYSQL_PASSWORD=dummycourses	--env MYSQL_DATABASE=courses --name mysql--publish 3306:3306 mysql:5.7
+## Usando Docker-Desktop
+1. docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=courses-user --env MYSQL_PASSWORD=dummycourses	--env MYSQL_DATABASE=courses --name mysql-Training --publish 3306:3306 mysql:8.0
+1.1 si la version 8.0 no funciona utilizar latest
+2. Descomentar # MYSQL CONFIGURATION en application.properties y comentar H2
+3. Comentar el h2 y agregar en pom.xml
+   <dependency>
+   <groupId>mysql</groupId>
+   <artifactId>mysql-connector-java</artifactId>
+   </dependency>
 
 
 

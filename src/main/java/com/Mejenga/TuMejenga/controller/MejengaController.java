@@ -25,6 +25,7 @@ public class MejengaController {
         @GetMapping("/courses/{id}")
         public Course getCourseDetails(@PathVariable long id){
                 Optional<Course> course = repository.findById(id);
+
                 if(course.isEmpty()){
                         throw new RuntimeException("Course not found" + id);
                 }
