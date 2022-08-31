@@ -50,8 +50,6 @@ public class MejengaController {
                if(course.isEmpty()){
                        throw  new RuntimeException("Ese curso no existe: " + id);
                }
-
-
                 repository.deleteById(id);
         }
 
