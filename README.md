@@ -1,6 +1,11 @@
 # Java-RestApi-Training
 Java, Spring boot, docker, mysql, rest api
 
+# El proyecto se creo usando https://start.spring.io/ 
+1. Maven project
+2. java
+3. Jar
+4. Con la dependencia Spring Web
 
 
 # Opcion 1 en BD : Correr en H2 memory database
@@ -25,15 +30,9 @@ Java, Spring boot, docker, mysql, rest api
 
 
 # Opcion 2 en BD: Correr para levantar BD MySql
-## Descargar : https://dev.mysql.com/downloads/shell/
 
-//	docker run --detach 
-//	--env MYSQL_ROOT_PASSWORD=dummypassword 
-//	--env MYSQL_USER=courses-user 
-//	--env MYSQL_PASSWORD=dummycourses 
-//	--env MYSQL_DATABASE=courses 
-//	--name mysql
-//	--publish 3306:3306 mysql:5.7
+## Usando Docker
+docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=courses-user --env MYSQL_PASSWORD=dummycourses	--env MYSQL_DATABASE=courses --name mysql--publish 3306:3306 mysql:5.7
 
 
 
